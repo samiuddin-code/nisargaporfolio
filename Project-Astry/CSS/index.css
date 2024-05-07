@@ -358,3 +358,70 @@ footer {
   border-bottom: 2px solid rgb(255, 0, 217);
   border-right: 2px solid rgb(221, 0, 255);
 }
+/* Base CSS (already in your stylesheet) */
+/* Your existing CSS rules here... */
+
+/*? <!----------------------------------------------- < Responsive Adjustments > -----------------------------------------------> */
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  #logo, #bgpencil {
+    width: 200px; /* Adjust size for smaller screens */
+    right: 10px; /* Adjust position */
+  }
+  #struggling, #help {
+    font-size: 40px; /* Smaller text */
+    margin-left: 20px;
+  }
+  .portfolio-content, .interestparent > div {
+    width: 90%; /* Full width on smaller screens */
+    margin-left: 5%;
+  }
+  #letsexplore, .portfolio-content label {
+    font-size: 15px; /* Smaller button and label text */
+  }
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack nav items */
+    padding: 10px;
+  }
+  nav > div {
+    width: 100%; /* Full width nav items */
+  }
+  #struggling, #help {
+    font-size: 30px; /* Even smaller text for phones */
+    margin-left: 10px;
+  }
+  #logo, #bgpencil {
+    width: 150px; /* Even smaller logo */
+    top: 90px; /* Adjust top position */
+  }
+  #letsexplore {
+    padding: 8px 20px; /* Smaller padding */
+  }
+  .sectionheads, #about, #gallery {
+    font-size: 5em; /* Adjust large text size */
+  }
+  .interestparent {
+    flex-direction: column; /* Stack interests vertically */
+  }
+  .interestparent > div {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Stack with vertical space */
+  }
+  #portfolio > div {
+    flex-direction: column; /* Stack portfolio items */
+  }
+}
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust base font size */
+  }
+  .portfolio-content p, .portfolio-content label {
+    font-size: 16px; /* Increase readability */
+  }
+}
